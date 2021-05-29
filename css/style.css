@@ -22,14 +22,6 @@ body {
   margin: auto;
 }
 
-nav,
-main,
-section,
-footer {
-  width: 100%;
-  overflow: hidden;
-}
-
 section {
   padding: 50px 0;
 }
@@ -455,6 +447,7 @@ footer span {
     text-align: center;
     padding-top: 25%;
     transition: 0.5s ease-in-out;
+    overflow: hidden;
   }
 
   nav ul.active {
@@ -539,6 +532,11 @@ footer span {
   }
   main .main-content .text-3 {
     font-size: 30px;
+  }
+
+  .about .container .image img {
+    width: 100%;
+    height: auto;
   }
 
   .portfolio .container .project {

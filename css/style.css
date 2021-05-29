@@ -254,16 +254,54 @@ main .social i:hover {
 }
 
 .portfolio .container .project {
+  position: relative;
   width: 30%;
   height: 200px;
-  background-color: #222;
+  background-size: cover;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 
-.portfolio .container div:hover {
-  background-color: var(--main-color);
+.portfolio .container .project:first-of-type {
+  background-image: url(../images/projects/aroma\ shop.jpg);
+}
+
+.portfolio .container .project:nth-of-type(2) {
+  background-image: url(../images/projects/royal\ hotel.jpg);
+}
+
+.portfolio .container .project:last-of-type {
+  background-image: url(../images/projects/coffee\ blend.jpg);
+}
+
+.portfolio .container .project .project-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.portfolio .container .project:hover .project-overlay {
+  opacity: 0.5;
+}
+
+.portfolio .container .project:hover .visit {
+  color: var(--main-color);
+}
+
+.portfolio .container .project .visit {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: 0.5s ease-in-out;
 }
 
 /* ---------------- Skills Styles --------------*/

@@ -254,25 +254,22 @@ main .social i:hover {
 }
 
 .portfolio .container .project {
-  position: relative;
   width: 30%;
-  height: 200px;
-  background-size: cover;
+  height: 300px;
   border-radius: 5px;
   cursor: pointer;
+  margin: 1rem 0;
   transition: 0.3s ease-in-out;
+  position: relative;
 }
 
-.portfolio .container .project:first-of-type {
-  background-image: url(../images/projects/aroma\ shop.jpg);
-}
-
-.portfolio .container .project:nth-of-type(2) {
-  background-image: url(../images/projects/royal\ hotel.jpg);
-}
-
-.portfolio .container .project:last-of-type {
-  background-image: url(../images/projects/coffee\ blend.jpg);
+.portfolio .container .project img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .portfolio .container .project .project-overlay {
@@ -283,6 +280,7 @@ main .social i:hover {
   top: 0;
   left: 0;
   transition: 0.5s ease-in-out;
+  z-index: 55;
 }
 
 .portfolio .container .project:hover .project-overlay {
@@ -302,6 +300,7 @@ main .social i:hover {
   left: 50%;
   transform: translate(-50%, 0);
   transition: 0.5s ease-in-out;
+  z-index: 56;
 }
 
 /* ---------------- Skills Styles --------------*/
@@ -424,7 +423,7 @@ main .social i:hover {
 .contact .container .text .icon-container {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .contact .container .text .icon-container i {

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a data-link="home" class="logo">Portfo<span>lio.</span></a>
+        <ul>
+          <li data-link="home"><a class="active">Home</a></li>
+          <li data-link="about"><a>About</a></li>
+          <li data-link="portfolio"><a>Portfolio</a></li>
+          <li data-link="skills"><a>Skills</a></li>
+          <li data-link="contact"><a>Conatct</a></li>
+        </ul>
+        <a href="#" class="btn-navbar"><i class="fas fa-bars"></i></a>
+      </div>
+    </nav>
+
+    <!-- Main section -->
+    <main class="home">
+      <div class="container">
+        <div class="main-content">
+          <div class="text-1">Hello, my name is</div>
+          <div class="text-2">Islam Ali</div>
+          <div class="text-3">And I'm a <span>Developer</span></div>
+          <a data-link="contact" class="btn btn-contact">Contact me</a>
+          <div class="social">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- About section-->
+    <section class="about" id="about">
+      <h2 class="section-heading">About me</h2>
+      <div class="container">
+        <div class="image">
+          <img src="images/Personal image.jpg" alt="Personal Image" />
+        </div>
+        <div class="text">
+          <h3 class="title">I'm Islam Ali I'm a <span>developer</span></h3>
+          <p class="text-content">
+            We provide Web Design and Development Services for clients all over the world.
+            Please see some of our projects in our portfolio. We create high quality websites and applications.
+          </p>
+          <a href="#" class="btn">Download Cv</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+      <h2 class="section-heading">My Portfolio</h2>
+      <div class="container">
+        <div class="project"></div>
+        <div class="project"></div>
+        <div class="project"></div>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills">
+      <h2 class="section-heading">My skills</h2>
+      <div class="container">
+        <div class="text">
+          <h3 class="title">My creative skills & experiences.</h3>
+          <p class="text-content">
+            Implements web designs using the three main web languages (HTML, CSS & Javascript). Also using the most common framworks and libraries such as (Bootstrap & jQuery). And taking into consideration to make the website fully responsive. 
+          </p>
+        </div>
+        <div class="graphs">
+          <div class="graph">
+            <span>HTML</span>
+            <span class="percent">95%</span>
+          </div>
+          <div class="graph">
+            <span>CSS</span>
+            <span class="percent">85%</span>
+          </div>
+          <div class="graph">
+            <span>JS</span>
+            <span class="percent">70%</span>
+          </div>
+        </div>
+      </div>
+      <a data-link="contact" class="btn btn-contact">Contact me</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <h2 class="section-heading">Contact me</h2>
+      <div class="container">
+        <div class="text">
+          <h3 class="title">Get in touch</h3>
+          <p class="text-content" style="color: grey">
+            You are always welcome to be in touch with us, Call us or send us a message.
+          </p>
+          <div class="icon-container">
+              <i class="fas fa-user"></i>
+            <div>
+                <span>Name</span>
+                <span>Islam Ali</span>
+            </div>
+          </div>
+          <div class="icon-container">
+              <i class="fas fa-map-marker-alt"></i>
+            <div>
+                <span>Address</span>
+                <span>Cairo, Egypt</span>
+            </div>
+        </div>
+        <div class="icon-container">
+            <i class="fas fa-envelope"></i>
+            <div>
+                <span>Email</span>
+                <span>islamkhtabsolom@yahoo.com</span>
+            </div>
+        </div>
+        </div>
+        <form action="">
+          <input type="text" name="name" placeholder="Name" />
+          <input type="email" name="email" placeholder="Email" />
+          <input type="text" name="subject" placeholder="Subject" />
+          <textarea name="message" placeholder="Message""></textarea>
+          <a href="#" class="btn">Send message</a>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+        <p>Created By <span>Islam Ali</span> | &copy; 2021 All rights reserved.</p>
+    </footer>
+    <!-- Jquery cdn-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/fb70e157c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

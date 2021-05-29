@@ -1,0 +1,552 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+/* ----------- Global styles -------------------- */
+:root {
+  --main-color: #dc143c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+nav,
+main,
+footer {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.btn {
+  color: white;
+  background-color: var(--main-color);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--main-color);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--main-color);
+  background-color: transparent;
+}
+
+.section-heading {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 25px 0 50px 0;
+  padding-bottom: 15px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.section-heading::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+.section-heading::after {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.text-content {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* ---------- Navbar -------------- */
+nav {
+  width: 100%;
+  color: white;
+  position: fixed;
+  padding: 15px 0;
+  transition: 0.3s ease-in-out;
+  font-family: "Ubuntu", sans-serif;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.sticky {
+  background-color: var(--main-color);
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sticky .logo span {
+  color: white;
+}
+
+nav .logo span {
+  color: var(--main-color);
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 25px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+nav ul li:hover a,
+nav ul li a.active {
+  color: var(--main-color);
+}
+
+.sticky ul li:hover a,
+.sticky ul li a.active {
+  color: white;
+}
+
+nav .btn-navbar {
+  color: white;
+  font-size: 25px;
+  display: none;
+}
+
+/* -------------- Main secton -------------------- */
+main {
+  height: 100vh;
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  font-family: "Ubuntu", sans-serif;
+}
+
+main .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+main .main-content {
+  color: white;
+}
+
+main .main-content .text-1 {
+  font-size: 27px;
+}
+main .main-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+main .main-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+main .main-content .text-3 span {
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+main .social {
+  margin-top: 100px;
+}
+
+main .social i {
+  font-size: 35px;
+  color: white;
+  margin-right: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+main .social i:hover {
+  color: var(--main-color);
+}
+
+/* --------- About Section -------------------- */
+.about .section-heading::after {
+  content: "Who am I";
+}
+
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .container .image {
+  padding-right: 50px;
+}
+
+.about .container .image img {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.about .container .text h3 span {
+  color: var(--main-color);
+}
+
+/* ----------- Portfolio section ------------- */
+.portfolio {
+  color: white;
+  background-color: #111111;
+}
+
+.portfolio .section-heading::before {
+  width: 200px;
+  background-color: white;
+}
+
+.portfolio .section-heading::after {
+  content: "What I am doing";
+  background-color: #111111;
+}
+
+.portfolio .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.portfolio .container .project {
+  width: 30%;
+  height: 200px;
+  background-color: #222;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio .container div:hover {
+  background-color: var(--main-color);
+}
+
+/* ---------------- Skills Styles --------------*/
+.skills .section-heading::after {
+  content: "What I know";
+}
+
+.skills .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills .container .text {
+  width: 50%;
+}
+
+.skills .container .graphs {
+  width: 45%;
+}
+
+.skills .container .graphs .graph {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.skills .container .graphs .graph::before {
+  content: "";
+  width: 100%;
+  background-color: #d3d3d3;
+  padding: 3px;
+  position: absolute;
+  top: 35px;
+}
+
+.skills .container .graphs .graph:after {
+  content: "";
+  background-color: var(--main-color);
+  padding: 3px;
+  position: absolute;
+  top: 35px;
+}
+
+.skills .container .graphs .graph:first-of-type::after {
+  width: 90%;
+}
+
+.skills .container .graphs .graph:nth-of-type(2)::after {
+  width: 85%;
+}
+
+.skills .container .graphs .graph:last-of-type::after {
+  width: 70%;
+}
+
+.skills .container .graphs .graph span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.skills .btn-contact {
+  margin-left: 5%;
+}
+
+/* --------- Contact section -----------------*/
+.contact {
+  color: white;
+  background-color: #111111;
+}
+
+.contact .section-heading::before {
+  background-color: white;
+}
+
+.contact .section-heading::after {
+  content: "Get in touch";
+  background-color: #111111;
+}
+
+.contact .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact .container .text {
+  width: 45%;
+}
+
+.contact .container form {
+  width: 50%;
+}
+
+.contact .container form input,
+.contact .container form textarea {
+  width: 100%;
+  color: white;
+  background-color: #111111;
+  padding: 10px;
+  border: 5px solid white;
+  margin-bottom: 10px;
+  outline: 0;
+}
+
+.contact .container form input:first-of-type,
+.contact .container form input:nth-of-type(2) {
+  width: 47%;
+}
+
+.contact .container form input:first-of-type {
+  margin-right: 5%;
+}
+
+.contact .container form textarea {
+  height: 150px;
+}
+
+.contact .container .text .icon-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact .container .text .icon-container i {
+  font-size: 25px;
+  margin-right: 20px;
+  color: var(--main-color);
+}
+
+.contact .container .text .icon-container div span {
+  display: block;
+}
+
+.contact .container .text .icon-container div span:first-of-type {
+  font-weight: 500;
+}
+
+.contact .container .text .icon-container div span:last-of-type {
+  color: grey;
+  font-size: 20px;
+}
+
+/* ----------- Footer -------------*/
+footer {
+  color: white;
+  text-align: center;
+  background-color: #111111;
+  padding: 10px 0;
+  border-top: 1px solid white;
+}
+
+footer span {
+  color: var(--main-color);
+}
+
+/* ----------- Responsive styles -----------*/
+@media (max-width: 992px) {
+  .btn {
+    font-size: 23px;
+    padding: 10px 30px;
+  }
+
+  nav .btn-navbar {
+    display: block;
+    z-index: 999;
+  }
+
+  nav .btn-navbar.active i::before {
+    content: "\f00d";
+  }
+
+  nav ul {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    text-align: center;
+    padding-top: 25%;
+    transition: 0.5s ease-in-out;
+  }
+
+  nav ul.active {
+    top: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+  }
+
+  nav ul li a {
+    display: inline-block;
+  }
+
+  main .main-content .text-2 {
+    font-size: 70px;
+  }
+  main .main-content .text-3 {
+    font-size: 35px;
+  }
+
+  .about .container {
+    flex-direction: column;
+  }
+
+  .about .container .image {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .about .container .text {
+    width: 100%;
+  }
+
+  .portfolio .container .project {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+
+  .skills .container {
+    flex-direction: column;
+  }
+
+  .skills .container .text {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .skills .container .graphs {
+    width: 100%;
+  }
+
+  .contact .container {
+    flex-direction: column;
+  }
+
+  .contact .container .text {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .contact .container form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  main .main-content .text-2 {
+    font-size: 60px;
+  }
+  main .main-content .text-3 {
+    font-size: 30px;
+  }
+
+  .portfolio .container .project {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .contact .container form input:first-of-type,
+  .contact .container form input:nth-of-type(2) {
+    width: 100%;
+  }
+}

@@ -24,12 +24,13 @@ body {
 
 nav,
 main,
+section,
 footer {
   width: 100%;
+  overflow: hidden;
 }
 
 section {
-  width: 100%;
   padding: 50px 0;
 }
 

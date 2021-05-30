@@ -13,13 +13,13 @@
       <div class="container">
         <a data-link="home" class="logo">Portfo<span>lio.</span></a>
         <ul>
-          <li data-link="home"><a class="active">Home</a></li>
-          <li data-link="about"><a>About</a></li>
-          <li data-link="portfolio"><a>Portfolio</a></li>
-          <li data-link="skills"><a>Skills</a></li>
-          <li data-link="contact"><a>Conatct</a></li>
+          <li data-link="home"><a class="active" id="target">Home</a></li>
+          <li data-link="about"><a id="target">About</a></li>
+          <li data-link="portfolio"><a id="target">Portfolio</a></li>
+          <li data-link="skills"><a id="target">Skills</a></li>
+          <li data-link="contact"><a id="target">Conatct</a></li>
         </ul>
-        <a href="#" class="btn-navbar"><i class="fas fa-bars"></i></a>
+        <span class="btn-navbar"><i class="fas fa-bars"></i></span>
       </div>
     </nav>
 
@@ -29,13 +29,14 @@
         <div class="main-content">
           <div class="text-1">Hello, my name is</div>
           <div class="text-2">Islam Ali</div>
-          <div class="text-3">And I'm a <span>Developer</span></div>
+          <div class="text-3">And I'm a <span class="typed"></span></div>
           <a data-link="contact" class="btn btn-contact">Contact me</a>
           <div class="social">
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.facebook.com/islam.khtab.1/" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://twitter.com/islamali1999" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/islam___ali/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://github.com/IslamAlii" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/islam-ali-959893143/" target="_blank"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
       </div>
@@ -49,7 +50,7 @@
           <img src="images/Personal image.jpg" alt="Personal Image" />
         </div>
         <div class="text">
-          <h3 class="title">I'm Islam Ali I'm a <span>developer</span></h3>
+          <h3 class="title">I'm Islam Ali I'm a <span class="typed2"></span></h3>
           <p class="text-content">
             We provide Web Design and Development Services for clients all over the world.
             Please see some of our projects in our portfolio. We create high quality websites and applications.
@@ -94,7 +95,7 @@
         <div class="graphs">
           <div class="graph">
             <span>HTML</span>
-            <span class="percent">95%</span>
+            <span class="percent">90%</span>
           </div>
           <div class="graph">
             <span>CSS</span>
@@ -102,7 +103,15 @@
           </div>
           <div class="graph">
             <span>JS</span>
-            <span class="percent">70%</span>
+            <span class="percent">75%</span>
+          </div>
+          <div class="graph">
+            <span>Bootstrap</span>
+            <span class="percent">60%</span>
+          </div>
+          <div class="graph">
+            <span>jQuery</span>
+            <span class="percent">75%</span>
           </div>
         </div>
       </div>
@@ -136,7 +145,7 @@
             <i class="fas fa-envelope"></i>
             <div>
                 <span>Email</span>
-                <span>islamkhtabsolom@yahoo.com</span>
+                <span>islam.ali.khtab.99@gmail.com</span>
             </div>
         </div>
         </div>
@@ -153,17 +162,21 @@
     <footer>
         <p>Created By <span>Islam Ali</span> | &copy; 2021 All rights reserved.</p>
     </footer>
-    <!-- Jquery cdn-->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+
+    <!-- jQuery-->
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        </script>
     <!-- Font Awesome-->
     <script
       src="https://kit.fontawesome.com/fb70e157c7.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Typed files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Main Script file-->
     <script src="js/script.js"></script>
   </body>
 </html>

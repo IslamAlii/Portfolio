@@ -24,6 +24,7 @@ body {
 
 section {
   padding: 50px 0;
+  margin: 0;
 }
 
 .btn {
@@ -151,6 +152,7 @@ nav ul li a.active {
 nav .btn-navbar {
   color: white;
   font-size: 25px;
+  cursor: pointer;
   display: none;
 }
 
@@ -284,11 +286,7 @@ main .social i:hover {
 }
 
 .portfolio .container .project:hover .project-overlay {
-  opacity: 0.5;
-}
-
-.portfolio .container .project:hover .visit {
-  color: var(--main-color);
+  opacity: 0;
 }
 
 .portfolio .container .project .visit {
@@ -296,11 +294,15 @@ main .social i:hover {
   font-size: 20px;
   font-weight: 500;
   position: absolute;
-  bottom: 5%;
+  bottom: 8%;
   left: 50%;
   transform: translate(-50%, 0);
   transition: 0.5s ease-in-out;
   z-index: 56;
+}
+
+.portfolio .container .project:hover .visit {
+  color: var(--main-color);
 }
 
 /* ---------------- Skills Styles --------------*/
@@ -354,8 +356,16 @@ main .social i:hover {
   width: 85%;
 }
 
+.skills .container .graphs .graph:nth-of-type(3)::after {
+  width: 75%;
+}
+
+.skills .container .graphs .graph:nth-of-type(4)::after {
+  width: 60%;
+}
+
 .skills .container .graphs .graph:last-of-type::after {
-  width: 70%;
+  width: 75%;
 }
 
 .skills .container .graphs .graph span {
@@ -476,7 +486,7 @@ footer span {
 
   nav ul {
     width: 100%;
-    height: 100%;
+    height: 70vh;
     background-color: black;
     position: fixed;
     top: -100%;
@@ -498,6 +508,11 @@ footer span {
 
   nav ul li a {
     display: inline-block;
+  }
+
+  .sticky ul li:hover a,
+  .sticky ul li a.active {
+    color: var(--main-color);
   }
 
   main .main-content .text-2 {
@@ -585,4 +600,29 @@ footer span {
   .contact .container form input:nth-of-type(2) {
     width: 100%;
   }
+}
+
+@media (max-width: 576px) {
+  .btn:hover {
+    color: white;
+    background-color: var(--main-color);
+  }
+
+  main .social i:hover {
+    color: white;
+  }
+
+  .portfolio .container .project .project-overlay {
+    opacity: 0;
+  }
+
+  .portfolio .container .project .visit {
+    color: var(--main-color);
+    z-index: 55;
+    font-weight: bold;
+  }
+}
+
+.test {
+  margin: 10rem 0;
 }

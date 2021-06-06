@@ -21,13 +21,13 @@ window.onscroll = () => {
   if (window.pageYOffset < 50) {
     navbar.classList.remove("sticky");
     navbar.style.top = "-100%";
+    setTimeout(function () {
+      navbar.style.top = "0";
+    }, 500);
   } else {
     navbar.classList.add("sticky");
   }
 
-  setTimeout(function () {
-    navbar.style.top = "0";
-  }, 500);
   // Adding active section to the links while scrolling
   mainAndSections.forEach((v, i) => {
     const sectionHeight = v.offsetHeight,
